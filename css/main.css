@@ -6,20 +6,18 @@
   Description: The Ken Sprague Fund
   Version: 1.3
   */
-
-  @import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700&subset=latin-ext,vietnamese');
-  @import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext,vietnamese');
-  @import url('https://fonts.googleapis.com/css?family=Rancho');
+  
+  @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
 
   body {
     background: #fff;
-    font-family: 'Cabin Condensed', sans-serif;
-    font-weight: 300;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #000;
-    background-image: url(../images/home/bg.png);
-    background-repeat: repeat;
+    color: #686868;
+    /*background-image: url(../images/home/bg.png);
+    background-repeat: repeat;*/
   }
 
   html {
@@ -55,8 +53,9 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Anton', sans-serif;
-    font-weight: 300;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+	letter-spacing: -1px;
   }
 
   h1{
@@ -66,6 +65,7 @@
   h2{
     font-size: 24px;
     color: #686868;
+	letter-spacing: 0px;
   }
 
   h3{
@@ -84,14 +84,13 @@
     font-size: 14px;
     color: #FF3232;
     border: 1px solid #FF3232;
-    font-family: 'Cabin Condensed', sans-serif;
-    font-weight: 300;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
     padding: 10px 25px;
   }
 
   #action .col-sm-5{
     position: absolute;
-
     top: 0;
     height: 100%;
     right: 0;
@@ -170,6 +169,7 @@
 #header{
   margin-bottom: 0;
   padding: 30px 0 60px 0;
+  margin-right: 25px;
   z-index: 1;
 }
 
@@ -207,7 +207,7 @@
   color: #818285;
   font-weight: 300;
   outline: none;
-  border: 1px solid #FF0000;
+  border: 1px dotted #b2b2b2;
   margin-top: 20px;
   border-radius: 4px;
 }
@@ -223,7 +223,7 @@
 }
 
 .social-icons ul li a{
-  font-size: 18px;
+  font-size: 20px;
   color: #686868;
   padding: 0;
 }
@@ -272,6 +272,7 @@
 #header .navbar-brand h1{
   padding: 0;
   margin: 0;
+  margin-left: 25px;
 }
 
 #header .navbar-nav.navbar-right >li:last-child{
@@ -279,11 +280,12 @@
 }
 
 #header .navbar-nav.navbar-right >li a {
-  color: #000;
+  color: #686868;
   font-size: 16px;
   padding: 20px;
+  margin-right: -0.5px;
   /*text-transform: uppercase;*/
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
@@ -384,6 +386,22 @@ ul.sub-menu {
   }
 }
 
+#gallery-title {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#gallery-subtitle {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: -5px;
+}
+
+#gallery-subtitle-red {
+	display: inline-block;
+	font-size: 20px;
+	color: #FF0000;
+}
 
 /*************************
 *******Footer******
@@ -391,11 +409,7 @@ ul.sub-menu {
 
 #footer {
   padding-bottom: 10px;
-  background-image: url(../images/home/footer.png);
-  background-repeat: repeat;
-  border-top: 1px dotted #434343;
-  /*background-position: bottom;
-  background-size: contain;*/
+  margin-top: -125px;
 }
 
 #footer h1{
@@ -454,7 +468,7 @@ ul.sub-menu {
   content: '"';
   font-size: 40px;
   color: #ea2c00;
-  font-family: 'Rancho', cursive;
+  font-family: 'PT Sans', sans-serif;
   transform:rotate(180deg);
   -ms-transform:rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Opera, Chrome, and Safari */
@@ -468,7 +482,7 @@ ul.sub-menu {
   content: '"';
   font-size: 40px;
   color: #ea2c00;
-  font-family: 'Rancho', cursive;
+  font-family: 'PT Sans', sans-serif;
   line-height: 0;
 }
 
@@ -482,7 +496,7 @@ ul.sub-menu {
 }
 
 .form-control {
-  border: 1px solid #eaeaea;
+  border: 1px solid #b2b2b2;
   font-weight: 300;
   outline: none;
   box-shadow: none;
@@ -521,7 +535,7 @@ ul.sub-menu {
 
 .copyright-text{
   margin-top: 70px;
-  color: #fff;
+  color: #686868;
   font-size: 16px;  
   padding-bottom: 15px;
 }
@@ -538,10 +552,9 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../images/home/slider-bg.png) 0 100% repeat-x;
   position: relative;
   margin-top: -135px;
-  border-bottom: 1px dotted #8c8c8c;
+  margin-right: -75px;
 }
 
 #home-slider .main-slider {
@@ -649,9 +662,6 @@ ul.sub-menu {
 }
 
 #action {
-  /*background-image: url(../images/home/tour-bg.png);
-  background-color: #fbfafa;
-  background-repeat: repeat-x;*/
   height: 157px;
   background-position: center;
   display: table;
@@ -705,7 +715,7 @@ ul.sub-menu {
 }
 
 .title {
-  color: #404040;
+  color: #686868;
   font-weight: 300;
 }
 
@@ -716,12 +726,12 @@ ul.sub-menu {
 }
 
 .single-features .col-sm-6 {
-  margin-top: 50px;
+  margin-top: -15px;
 }
 
 .single-features:last-child {
   padding-bottom: 95px;
-  padding-top: 0;
+  padding-top: 75px;
 }
 
 .single-features h2{
@@ -757,9 +767,6 @@ ul.sub-menu {
 }
 
 #page-breadcrumb {
-  /*background-image: url(../images/home/tour-bg.png);
-  background-color: #fbfafa;
-  background-repeat: repeat-x;*/
   height: 130px;
   background-position: center;
   display: table;
@@ -791,7 +798,7 @@ ul.sub-menu {
   position: absolute;
   width: 100%;
   left: 0;
-  background-position: 205px 4px;
+  background-position: 210px 4px;
 }
 
 .about-image {
@@ -1035,9 +1042,17 @@ ul.elements li > i{
   animation: fadeInUp 400ms;
 }
 
+#portfolio-information {
+  margin-top: -85px;
+}
+
 #portfolio .row{
   margin-left: -10px;
   margin-right: -10px;
+}
+
+#portfolio .row{
+  margin-bottom: -95px;
 }
 
 .portfolio-view {
@@ -1098,6 +1113,9 @@ ul.elements li > i{
 .portfolio-filter {
   margin: 80px 0;
   padding: 0;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  text-align: left;
 }
 
 .portfolio-filter li {
@@ -1458,6 +1476,10 @@ Portfolio Details
 .project-name h2{
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+#related-work {
+  margin-bottom: -150px;
 }
 
 #related-work .title{
@@ -2470,7 +2492,7 @@ span.stButton_gradient,
   margin-top: 50px;
   padding: 25px 53px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .btn-error:hover, .btn-error:focus  {
