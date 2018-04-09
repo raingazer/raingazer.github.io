@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Portfolio Details | Triangle</title>
+    <title>Gallery | The Ken Sprague Fund</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet">  
     <link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
@@ -25,7 +24,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
-<body>
+<body style="overflow-x: hidden;">
 	<header id="header">      
         <div class="container">
             <div class="row">
@@ -53,13 +52,13 @@
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                        <h1 style="margin-top: -50px;"><img src="images/logo.png" alt="logo"></h1>
+                        <h1 style="margin-top: -35px; margin-left: 10px;"><img src="images/Fishes.jpg" alt="logo"></h1>
                     </a>
                     
                 </div>
                 <div class="collapse navbar-collapse" style="margin-top: 15px;">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Homepage</a></li>
+                        <li><a href="index.html">Homepage</a></li>
                         <li class="dropdown"><a href="#">About<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="#">The Fund</a></li>
@@ -67,7 +66,7 @@
                             </ul>
                         </li>
                         <li><a href="#">Competition</a></li>  
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
                         <li class="dropdown"><a href="#">Contact<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="#">Get in touch</a></li>
@@ -90,14 +89,22 @@
     </header>
     <!--/#header-->
 
-    <section id="page-breadcrumb" style="margin-top: -25px; margin-bottom: -35px;">
+
+    <section id="page-breadcrumb" style="margin-top: -60px; margin-bottom: -60px;">
         <div class="vertical-center sun">
              <div class="container">
                 <div class="row">
                     <div class="action">
-                        <div class="col-sm-12">
-                            <h1 class="title">Gallery</h1>
-                            <p>Duis blandit venenatis nulla</p>
+						<div class="col-sm-12">
+                            
+							<div id="gallery-title">
+								<h1 class="title">
+									Gallery | 
+									<div id="gallery-subtitle-red">Ken</div> 
+									<div id="gallery-subtitle">Sprague Fund</div>
+								</h1>
+							</div>
+							
                         </div>
                     </div>
                 </div>
@@ -106,6 +113,7 @@
    </section>
     <!--/#action-->
 
+	
     <section id="portfolio-information" class="padding-top">
         <div class="container">
             <div class="row">
@@ -118,9 +126,6 @@
                     </div>
                     <div class="project-info overflow">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elimttis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
-                    </div>
-                    <div class="live-preview">
-                        <a href="gallery.html" class="btn btn-common uppercase">Back to Gallery</a>
                     </div>
                 </div>
             </div>
@@ -204,7 +209,7 @@
         </div>
     </section>
     <!--/#related-work-->
-
+	
 
     <footer id="footer">
         <div class="container">
@@ -288,8 +293,9 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
+    <script type="text/javascript" src="js/main.js"></script>    
 </body>
 </html>
